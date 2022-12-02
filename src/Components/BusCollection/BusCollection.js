@@ -2,7 +2,7 @@ import React from 'react';
 
 const BusCollection = () => {
     return (
-        <div data-aos="fade-up" className='   rounded-lg mx-auto mt-[-140px] relative  z-50 shadow-lg p-10 border-red-600'>
+        <div data-aos="fade-up" className='rounded-lg mx-auto mt-[-140px] relative  z-50 shadow-lg p-10'>
             <form action="" method="POST" className='p-10 grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-1 lg:gap-5 border-red-400 lg:mx-20 bg-gray-600'>
                 <div class="mb-6">
                     <label for="name" class="block mb-2 text-sm text-gray-600"

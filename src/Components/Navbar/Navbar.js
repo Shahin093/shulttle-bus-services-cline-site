@@ -11,6 +11,7 @@ const Navbar = () => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
     };
+
     return (
         <div className='absolute mb-20 banner opacity-67' style={myStyle}>
 

@@ -3,7 +3,9 @@ import 'aos/dist/aos.css';
 import './App.css';
 import AboutSuttle from './Components/AboutSuttle/AboutSuttle';
 import BusCollection from './Components/BusCollection/BusCollection';
+import ChooseUs from './Components/ChooseUs/ChooseUs';
 import Navbar from './Components/Navbar/Navbar';
+import OurServices from './Components/OurSerivces/OurServices';
 
 function App() {
   AOS.init();
@@ -12,6 +14,8 @@ function App() {
       <Navbar></Navbar>
       <BusCollection></BusCollection>
       <AboutSuttle></AboutSuttle>
+      <ChooseUs></ChooseUs>
+      <OurServices></OurServices>
     </div>
   );
 }
