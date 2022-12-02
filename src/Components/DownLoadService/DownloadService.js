@@ -20,7 +20,7 @@ const DownLoadService = () => {
                         <h2 className='text-white text-5xl  font-bold mx-auto'>Find A <span className='underline decoration-pink-500 decoration-[10px]'>Bus Charter</span> Near You With Our App</h2>
                         <p className='mt-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
 
-                        <div className='flex mt-20 gap-9'>
+                        <div className='flex mt-20 gap-9 grid grid-cols-1 lg:grid-cols-2'>
                             <img className='text-1xl w-52' src="https://templatekit.jegtheme.com/pertaev/wp-content/uploads/sites/220/2021/12/app-store-1.png" alt="" />
 
                             <img className='w-52' src="https://templatekit.jegtheme.com/pertaev/wp-content/uploads/sites/220/2021/12/google-play-1.png" alt="" />
