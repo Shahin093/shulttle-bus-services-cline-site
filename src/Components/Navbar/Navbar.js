@@ -12,7 +12,7 @@ const Navbar = () => {
         backgroundRepeat: 'no-repeat',
     };
     return (
-        <div className='banner opacity-67' style={myStyle}>
+        <div className='absolute mb-20 banner opacity-67' style={myStyle}>
 
             {/* Navbar design  */}
             <div class="navbar mt-2 lg:mt-14 py-5  rounded-lg">
@@ -108,7 +108,7 @@ const Navbar = () => {
                             <button class="button px-6 py-3 rounded-full"><span>Get Started</span></button>
                         </div>
                         <div data-aos="fade-right">
-                            <button class="button px-6 py-3 rounded-full"><span>Get Started</span></button>
+                            <button class="button px-6 py-3 rounded-full"><span>Get</span></button>
                         </div>
 
                     </div>

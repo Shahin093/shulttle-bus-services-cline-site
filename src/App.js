@@ -1,6 +1,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
+import AboutSuttle from './Components/AboutSuttle/AboutSuttle';
+import BusCollection from './Components/BusCollection/BusCollection';
 import Navbar from './Components/Navbar/Navbar';
 
 function App() {
@@ -8,9 +10,8 @@ function App() {
   return (
     <div className=''>
       <Navbar></Navbar>
-      <Navbar></Navbar>
-      <Navbar></Navbar>
-
+      <BusCollection></BusCollection>
+      <AboutSuttle></AboutSuttle>
     </div>
   );
 }
