@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import './App.css';
 import AboutSuttle from './Components/AboutSuttle/AboutSuttle';
 import BusCollection from './Components/BusCollection/BusCollection';
+import BusCollectionService from './Components/BusCollectionService/BusCollectionService';
 import ChooseUs from './Components/ChooseUs/ChooseUs';
 import DownLoadService from './Components/DownLoadService/DownloadService';
 import Navbar from './Components/Navbar/Navbar';
@@ -18,6 +19,7 @@ function App() {
       <ChooseUs></ChooseUs>
       <OurServices></OurServices>
       <DownLoadService></DownLoadService>
+      <BusCollectionService></BusCollectionService>
     </div>
   );
 }
