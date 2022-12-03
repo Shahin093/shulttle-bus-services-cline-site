@@ -3,9 +3,10 @@ import { FaBeer } from 'react-icons/fa';
 import './AboutSuttle.css'
 const AboutSuttle = () => {
     return (
-        <div class="hero min-h-screen my-6">
+        <div class="hero my-6">
             <div class="hero-content flex-col lg:flex-row-reverse">
-                <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/elementor/thumbs/the-girls-enter-the-doors-of-a-blue-bus-that-has-arrived-at-the-bus-stop--e1656575414346-pr2ezsmmrawcmkiwtv7o9n2a7ydrrpmhfdv79k8qho.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/elementor/thumbs/the-girls-enter-the-doors-of-a-blue-bus-that-has-arrived-at-the-bus-stop--e1656575414346-pr2ezsmmrawcmkiwtv7o9n2a7ydrrpmhfdv79k8qho.jpg" class=" w-6/12 rounded-lg shadow-2xl" />
+
                 <div className=' lg:w-6/12'>
 
                     <div data-aos="fade-left" className='demo-title'><h2>About Shuttle</h2></div>

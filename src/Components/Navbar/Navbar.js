@@ -4,16 +4,13 @@ const Navbar = () => {
     const myStyle = {
         backgroundImage: `url(https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-7ccqBRt94dA-unsplash.jpg)`,
         backgroundColor: "Black",
-        zIndex: 15,
         fontSize: '20px',
-        paddingLeft: '40px',
-        paddingRight: '40px',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
     };
 
     return (
-        <div className='absolute mb-20 banner opacity-67' style={myStyle}>
+        <div className='w-auto absolute mb-28 banner bg-opacity-60' style={myStyle}>
 
             {/* Navbar design  */}
             <div class="navbar mt-2 lg:mt-14 py-5  rounded-lg">
@@ -108,9 +105,7 @@ const Navbar = () => {
                         <div data-aos="fade-left">
                             <button class="button px-6 py-3 rounded-full"><span>Get Started</span></button>
                         </div>
-                        <div data-aos="fade-right">
-                            <button class="button px-6 py-3 rounded-full"><span>Get</span></button>
-                        </div>
+
 
                     </div>
                 </div>

@@ -1,6 +1,3 @@
-.testimotionals {}
-
-
 .testimotionals .card {
 
     position: relative;
@@ -8,7 +5,7 @@
     width: 350px;
     margin: 0 auto;
     background: #333;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0 10px 40px rgba(0, 0, 0, .5)
