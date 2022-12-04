@@ -2,9 +2,19 @@ import React from 'react';
 import './BusCollectionService.css';
 import { BiBus } from 'react-icons/bi';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import SingleBus from '../SingleBus/SingleBus';
 
 
 const BusCollectionService = () => {
+    const [bus, setBus] = useState([]);
+    useEffect(() => {
+        fetch('bus.json')
+            .then(res => res.json())
+            .then(data => setBus(data))
+    }, [])
+
     return (
         <div className='mt-20 mx-auto'>
             <h2 className='text-orange-600 font-bold'>Our Bus</h2>
@@ -24,7 +34,12 @@ const BusCollectionService = () => {
             {/* gari booking */}
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-20'>
 
-                <div>
+                {
+                    bus.map(b =>
+                        <SingleBus key={b._id} b={b}></SingleBus>
+                    )
+                }
+                {/* <div>
                     <div className=''>
                         <img className='rounded-lg' src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/bus-image4-800x540.jpg" alt="" />
                     </div>
@@ -182,7 +197,7 @@ const BusCollectionService = () => {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>

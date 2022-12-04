@@ -1,29 +1,42 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
-import AboutSuttle from './Components/AboutSuttle/AboutSuttle';
-import Blogs from './Components/Blogs/Blogs';
-import BusCollection from './Components/BusCollection/BusCollection';
-import BusCollectionService from './Components/BusCollectionService/BusCollectionService';
-import ChooseUs from './Components/ChooseUs/ChooseUs';
-import DownLoadService from './Components/DownLoadService/DownloadService';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+  Router,
+  Routes,
+} from "react-router-dom";
+import HomePage from './Components/HomePage/HomePage';
 import Navbar from './Components/Navbar/Navbar';
+import AboutSuttle from './Components/AboutSuttle/AboutSuttle';
 import OurServices from './Components/OurSerivces/OurServices';
-import Testiminual from './Components/Testiminual/Testiminual';
+import BusCollectionService from './Components/BusCollectionService/BusCollectionService';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    fetch('http://localhost:5000/api/v1/busBooking')
+      .then(res => res.json())
+      .then(data => console.log(data))
+  }, [])
+
   AOS.init();
   return (
-    <div className=''>
+    <div>
       <Navbar></Navbar>
-      <BusCollection></BusCollection>
-      <AboutSuttle></AboutSuttle>
-      {/* <ChooseUs></ChooseUs> */}
-      <OurServices></OurServices>
-      <DownLoadService></DownLoadService>
-      <BusCollectionService></BusCollectionService>
-      <Testiminual></Testiminual>
-      <Blogs></Blogs>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/aboutSuttle" element={<AboutSuttle />} />
+        <Route path="/services" element={<BusCollectionService />} />
+      </Routes>
+
+
+
+
+
     </div>
   );
 }

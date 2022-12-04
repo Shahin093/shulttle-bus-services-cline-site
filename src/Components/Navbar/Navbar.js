@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 const Navbar = () => {
     const myStyle = {
@@ -40,8 +41,10 @@ const Navbar = () => {
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a>Home</a></li>
-                        <li><a>About US</a></li>
+                        <li><Link to={'/'}>Home</Link></li>
+                        <li><Link to={'/aboutSuttle'}>AboutUS</Link></li>
+                        <li><Link to={'/services'}>Services</Link></li>
+
                         <li><a>Services</a></li>
 
                         <li tabindex="0">
