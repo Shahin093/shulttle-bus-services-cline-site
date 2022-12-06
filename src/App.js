@@ -2,11 +2,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
 import {
-  createBrowserRouter,
-  RouterProvider,
   Route,
-  Link,
-  Router,
+
   Routes,
 } from "react-router-dom";
 import HomePage from './Components/HomePage/HomePage';
@@ -15,6 +12,10 @@ import AboutSuttle from './Components/AboutSuttle/AboutSuttle';
 import OurServices from './Components/OurSerivces/OurServices';
 import BusCollectionService from './Components/BusCollectionService/BusCollectionService';
 import { useEffect } from 'react';
+import SignUp from './Components/SignUp/SignUp';
+import Login from './Components/SignUp/Login';
+import RequiredAuth from './Components/SignUp/RequiredAuth';
+import OriginalNavbar from './Components/OriginalNavber/OriginalNavbar';
 
 function App() {
   useEffect(() => {
@@ -25,12 +26,20 @@ function App() {
 
   AOS.init();
   return (
-    <div>
-      <Navbar></Navbar>
+    <div className='bg-grey-lighter'>
+      {/* <Navbar></Navbar> */}
+
+      <OriginalNavbar></OriginalNavbar>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/aboutSuttle" element={<AboutSuttle />} />
+        <Route path="/aboutSuttle" element={
+          <RequiredAuth>
+            <AboutSuttle />
+          </RequiredAuth>
+        } />
         <Route path="/services" element={<BusCollectionService />} />
+        <Route path='/signup' element={<SignUp></SignUp>} />
+        <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
 
 

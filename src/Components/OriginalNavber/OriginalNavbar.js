@@ -3,10 +3,9 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
-import OriginalNavbar from '../OriginalNavber/OriginalNavbar';
 import Loading from '../Shared/Loading';
-import './Navbar.css';
-const Navbar = () => {
+import './OriginalNavbar.css'
+const OriginalNavbar = () => {
 
     const [user, loading, error] = useAuthState(auth);
     const logout = () => {
@@ -16,19 +15,10 @@ const Navbar = () => {
     if (loading) {
         return <Loading></Loading>
     }
-    const myStyle = {
-        backgroundImage: `url(https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-7ccqBRt94dA-unsplash.jpg)`,
-        backgroundColor: "Black",
-        fontSize: '20px',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-    };
-
     return (
-        <div className='w-auto absolute mb-28 banner bg-opacity-60' style={myStyle}>
-
+        <div>
             {/* Navbar design  */}
-            {/* <div class="navbar mt-2 lg:mt-14 py-5  rounded-lg">
+            <div class="navbar mt-2 lg:mt-14 py-5  rounded-lg">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -100,35 +90,9 @@ const Navbar = () => {
                         </div>
                     </label>
                 </div>
-            </div> */}
-            {/* <OriginalNavbar></OriginalNavbar> */}
-
-            {/* Banner text design  */}
-            <div className='grid grid-cols-1 lg:grid-cols-2'>
-                <div className="empty">
-
-                </div>
-                <div className="banner-content pt-8">
-                    <div data-aos="fade-up" >
-                        <h2 className='text-4xl mb-7 lg:text-6xl text-white font-bold'>We Are Best <br /> <span><span className='text-orange-600'>Bus Charter </span>Service</span> In The World</h2>
-                    </div>
-                    <div data-aos="fade-down">
-                        <p className='text-white mb-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                    </div>
-                    <div className='grid grid-cols-2'>
-                        <div data-aos="fade-left">
-                            <button class="button px-6 py-3 rounded-full"><span>Get Started</span></button>
-                        </div>
-
-
-                    </div>
-                </div>
             </div>
-
-
         </div>
-
     );
 };
 
-export default Navbar;
+export default OriginalNavbar;
