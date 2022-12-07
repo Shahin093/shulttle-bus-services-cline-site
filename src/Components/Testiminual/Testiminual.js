@@ -76,7 +76,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -88,7 +88,7 @@ const Testiminual = () => {
                     </div>
 
                     <div className='bg-white slider-container p-10'>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+
 
                         <div class="rating rating-lg rating-half">
                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -107,37 +107,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
-                                </div>
-
-                            </div>
-                            <div>
-                                <h2 className='font-bold'>Fred Rodriquez</h2>
-                                <p>Project manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='bg-white slider-container p-10'>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
-
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        </div>
-
-                        <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -167,7 +137,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -197,7 +167,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -227,7 +197,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -257,7 +227,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -287,7 +257,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -317,7 +287,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -347,7 +317,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -377,7 +347,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -407,7 +377,7 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>
@@ -437,7 +407,37 @@ const Testiminual = () => {
                         <div className='flex items-center justify-around mt-5'>
                             <div class="avatar">
                                 <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" />
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
+                                </div>
+
+                            </div>
+                            <div>
+                                <h2 className='font-bold'>Fred Rodriquez</h2>
+                                <p>Project manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bg-white slider-container p-10'>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div className='flex items-center justify-around mt-5'>
+                            <div class="avatar">
+                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
                             </div>

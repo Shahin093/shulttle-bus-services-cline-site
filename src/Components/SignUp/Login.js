@@ -131,59 +131,17 @@ const Login = () => {
                         </div>
 
                         {signInError}
-                        {
-                            bLoading ?
 
-
-
-                                <input onClick={() => fetchData(true)} className='btn btn-outline w-full  bg-primary text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1' type="submit" value="Login" />
-                                :
-                                <button className="button">
-                                    {bLoading && (
-                                        <i
-                                            className="fa fa-refresh fa-spin"
-                                            style={{ marginRight: "5px" }}
-                                        />
-                                    )}
-                                    {bLoading && <span>Login</span>}
-                                    {!bLoading && <span>Login</span>}
-                                </button>
-                        }
+                        <input onClick={() => fetchData(true)} className='btn btn-outline w-full  bg-primary text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1' type="submit" value="Login" />
 
 
 
 
-
-
-                        {/* <button type='submit' onClick={() => fetchData(true)} disabled={bLoading} className='btn btn-outline w-full  bg-primary text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1' >
-                            {bLoading && (
-                                <i
-                                    className="fa fa-refresh fa-spin"
-                                    style={{ marginRight: "5px" }}
-                                />
-                            )}
-                            <input onClick={() => fetchData(true)} className='btn btn-outline w-full  bg-primary text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1' type="submit" value="Login" />
-                        </button> */}
                     </form >
                     <p><small>New to Doctors Portal <Link className='text-secondary' to='/signup'>Create New Account</Link></small></p>
 
                     <div className="divider">OR</div>
                     <button onClick={() => signInWithGoogle()} className="btn btn-outline w-full  bg-primary text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1">Continue with Google</button>
-
-
-                    <div style={{ marginTop: "60px" }}>
-                        <button className="button">
-                            {bLoading && (
-                                <i
-                                    className="fa fa-refresh fa-spin"
-                                    style={{ marginRight: "5px" }}
-                                />
-                            )}
-                            {bLoading && <span>Login</span>}
-                            {!bLoading && <span>Login</span>}
-                        </button>
-                    </div>
-
                 </div >
             </div >
         </div >
