@@ -4,34 +4,12 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
-import "rsuite/dist/rsuite.min.css";
-import { Button } from "rsuite";
 
 const Login = () => {
 
-    const [bLoading, setBLoading] = useState(false);
 
 
 
-    const fetchData = () => {
-        setBLoading({ bLoading: true });
-
-        //Faking API call here
-        setTimeout(() => {
-            setBLoading({ bLoading: false });
-        }, 1000);
-    };
-
-
-    const buttonload = {
-        backgroundColor: "#04AA6D",
-        color: "white",
-        padding: "12px 16px",
-        fontSize: "16px"
-    };
-    let buttonLoading = <i class="fa fa - spinner fa - spin"></i>;
-
-    const ButtonStyle = { margin: "10px 10px" };
 
     let navigate = useNavigate();
     let location = useLocation();
@@ -49,7 +27,25 @@ const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        // console.log(data);
+        const databody = {
+            email: data.email,
+            password: data.password
+        };
+        console.log(data);
+        fetch('http://localhost:5000/api/v1/user/login', {
+            method: 'POST',
+            body: JSON.stringify(databody),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data?.data?.token);
+                localStorage.setItem('accessToken', data?.data?.token)
+            });
+        console.log(data?.data?.token);
+
         signInWithEmailAndPassword(data.email, data.password);
 
     }
@@ -58,7 +54,9 @@ const Login = () => {
 
     // const [token] = useToken(user || gUser);
     useEffect(() => {
-
+        // if (user || gUser) {
+        //     navigate(from, { replace: true });
+        // }
         if (user || gUser) {
             navigate(from, { replace: true });
         }
@@ -66,7 +64,7 @@ const Login = () => {
     }, [user || gUser, from, navigate])
 
     if (gLoading || loading) {
-        return
+        return <Loading></Loading>
     }
     if (gError || error) {
         signInError = <p className='text-red-500'><small>{gError?.message || error?.message}</small></p>
@@ -132,7 +130,7 @@ const Login = () => {
 
                         {signInError}
 
-                        <input onClick={() => fetchData(true)} className='btn btn-outline w-full  bg-primary text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1' type="submit" value="Login" />
+                        <input className='btn btn-outline w-full  bg-primary text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1' type="submit" value="Login" />
 
 
 

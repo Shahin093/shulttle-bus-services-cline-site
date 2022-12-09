@@ -7,16 +7,16 @@ import {
   Routes,
 } from "react-router-dom";
 import HomePage from './Components/HomePage/HomePage';
-import Navbar from './Components/Navbar/Navbar';
+
 import AboutSuttle from './Components/AboutSuttle/AboutSuttle';
-import OurServices from './Components/OurSerivces/OurServices';
+
 import BusCollectionService from './Components/BusCollectionService/BusCollectionService';
-import { useEffect } from 'react';
+
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/SignUp/Login';
 import RequiredAuth from './Components/SignUp/RequiredAuth';
 import OriginalNavbar from './Components/OriginalNavber/OriginalNavbar';
-import Sidebar from './Components/DashBoard/Sidebar';
+
 import DashBoard from './Components/DashBoard/DashBoard';
 import Chart from './Components/DashBoard/Chart/Chart';
 import MyBooking from './Components/DashBoard/MyBooking/MyBooking';
@@ -74,22 +74,16 @@ function App() {
       "Active User": 3000,
     },
   ];
-
-
-  useEffect(() => {
-    fetch('http://localhost:5000/api/v1/busBooking')
-      .then(res => res.json())
-      .then(data => console.log(data))
-  }, [])
-
   AOS.init();
   return (
     <div className='bg-grey-lighter'>
       {/* <Navbar></Navbar> */}
 
       <OriginalNavbar></OriginalNavbar>
+      {/* <Navbar></Navbar> */}
+      {/* <BusCollection></BusCollection> */}
       <Routes>
-        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/aboutSuttle" element={
           <RequiredAuth>
             <AboutSuttle />

@@ -51,13 +51,14 @@ const SignUp = () => {
     const onSubmit = async data => {
         // console.log(data.email);
 
+        const bus_name = "ANA";
         const email = data.email;
         const firstName = data.firstName;
         const lastName = data.lastName;
         const password = data.password;
         const confirmPassword = data.confirm_password;
         const databody = {
-            email, firstName, lastName, password, confirmPassword
+            bus_name, email, firstName, lastName, password, confirmPassword
         };
 
         fetch('http://localhost:5000/api/v1/user/signup', {
@@ -152,19 +153,15 @@ const SignUp = () => {
                                 <label class="label">
                                     <span class="label-text">Role</span>
                                 </label>
-                                <select name="select" className="input input-bordered w-full max-w-xs"
 
-                                >
-                                    <option selected disabled>
-                                        Select function
-                                    </option>
-                                    <option value="5">user</option>
-                                    <option value="6">admin</option>
-                                    <option value="6">store manager</option>
+                                <select name="select" className="input input-bordered w-full max-w-xs" required>
+                                    <option value="">None</option>
+                                    <option value="user">user</option>
+                                    <option value="admin">admin</option>
+                                    <option value="store-manager">store-manager</option>
                                 </select>
 
                                 <label class="label">
-
 
                                 </label>
                             </div>
