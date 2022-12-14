@@ -13,13 +13,13 @@ const Testiminual = () => {
     return (
         <div className=' mx-auto mt-12 my-12'>
 
-            <div class="hero min-h-screen" style={myStyle}>
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                    <div class="max-w-md">
-                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn btn-primary">Get Started</button>
+            <div className="hero min-h-screen" style={myStyle}>
+                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-content text-center text-neutral-content">
+                    <div className="max-w-md">
+                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button className="btn btn-primary">Get Started</button>
                     </div>
                 </div>
             </div>
@@ -59,23 +59,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -90,53 +90,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
 
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
-                                </div>
-
-                            </div>
-                            <div>
-                                <h2 className='font-bold'>Fred Rodriquez</h2>
-                                <p>Project manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='bg-white slider-container p-10'>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
-
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        </div>
-
-                        <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -150,23 +120,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -180,23 +150,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -210,23 +180,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -240,23 +210,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -270,23 +240,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -300,23 +270,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -330,23 +300,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -360,23 +330,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -390,23 +360,23 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 
@@ -420,23 +390,53 @@ const Testiminual = () => {
                     <div className='bg-white slider-container p-10'>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
 
-                        <div class="rating rating-lg rating-half">
-                            <input type="radio" name="rating-10" class="rating-hidden" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
                         </div>
 
                         <div className='flex items-center justify-around mt-5'>
-                            <div class="avatar">
-                                <div class="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
+                                </div>
+
+                            </div>
+                            <div>
+                                <h2 className='font-bold'>Fred Rodriquez</h2>
+                                <p>Project manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bg-white slider-container p-10'>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+
+                        <div className="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" className="rating-hidden" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" className="bg-green-500 mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div className='flex items-center justify-around mt-5'>
+                            <div className="avatar">
+                                <div className="w-20  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/image-D2C59FF-150x150.jpg" alt='pic' />
                                 </div>
 

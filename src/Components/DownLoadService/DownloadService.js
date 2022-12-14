@@ -5,11 +5,11 @@ const DownLoadService = () => {
         backgroundImage: `url(https://placeimg.com/1000/800/arch)`,
     }
     return (
-        <div class="mt-10 hero min-h-screen" style={myStyle}>
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
+        <div className="mt-10 hero min-h-screen" style={myStyle}>
+            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-content text-center text-neutral-content">
 
-                <div class=" grid grid-cols-1 lg:grid-cols-2">
+                <div className=" grid grid-cols-1 lg:grid-cols-2">
 
                     <div data-aos="fade-right">
                         <img src="https://templatekit.jegtheme.com/shuttle/wp-content/uploads/sites/300/2022/06/update-mockup.png" alt="" />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -53,15 +53,17 @@ const Login = () => {
     let signInError;
 
     // const [token] = useToken(user || gUser);
+    const us = (user || gUser);
     useEffect(() => {
         // if (user || gUser) {
         //     navigate(from, { replace: true });
         // }
-        if (user || gUser) {
+
+        if (us) {
             navigate(from, { replace: true });
         }
 
-    }, [user || gUser, from, navigate])
+    }, [from, navigate, us])
 
     if (gLoading || loading) {
         return <Loading></Loading>
@@ -73,10 +75,10 @@ const Login = () => {
 
     return (
 
-        <div class="bg-gray-300 min-h-screen flex flex-col ">
-            <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-                <div class="bg-white px-6 py-8 rounded-lg shadow-md text-black w-full ">
-                    <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+        <div className="bg-gray-300 min-h-screen flex flex-col ">
+            <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+                <div className="bg-white px-6 py-8 rounded-lg shadow-md text-black w-full ">
+                    <h1 className="mb-8 text-3xl text-center">Sign up</h1>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-control w-full max-w-xs">
                             <label className="label">

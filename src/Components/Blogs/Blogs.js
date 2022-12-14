@@ -12,7 +12,7 @@ const Blogs = () => {
 
                 </div>
                 <div className='w-full items-end'>
-                    <button class="bg-orange-700 text-white font-bold hover:bg-black hover:-translate-y-1 px-10 py-3 rounded-full rounded-lg"><span>Show All Blogs</span></button>
+                    <button className="bg-orange-700 text-white font-bold hover:bg-black hover:-translate-y-1 px-10 py-3 rounded-full rounded-lg"><span>Show All Blogs</span></button>
                 </div>
             </div>
 

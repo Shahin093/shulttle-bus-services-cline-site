@@ -9,7 +9,7 @@ import auth from '../../firebase.init';
 // http://localhost:5000/api/v1/busCollection?email=sishahin093@gamil.com
 
 const BusCollection = () => {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const [startDate, setStartDate] = useState(new Date());
     console.log(startDate);
@@ -27,10 +27,11 @@ const BusCollection = () => {
         const slot = data.time;
         const status = 'active';
         const seat = data.seat;
+        const date = new Date().toISOString().slice(0, 10);
         const amount = 400;
         const driver_staf = 2
         const databody = {
-            bus_name, district_from, district_to, customer_name, email, slot, seat, amount, status, driver_staf
+            bus_name, district_from, district_to, customer_name, email, slot, seat, amount, status, date, driver_staf
         }
         fetch('http://localhost:5000/api/v1/busCollection', {
             method: 'POST',
@@ -59,9 +60,9 @@ const BusCollection = () => {
 
                             <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
                                 {/* Where  */}
-                                <div class="form-control w-full">
-                                    <label class="label">
-                                        <span class="label-text">Where</span>
+                                <div className="form-control w-full">
+                                    <label className="label">
+                                        <span className="label-text">Where</span>
                                     </label>
                                     <select name="select" className="input input-bordered w-full max-w-xs" required  {...register("where", {
                                         required: {
@@ -73,14 +74,14 @@ const BusCollection = () => {
                                         <option value="Chittagong">Chittagong</option>
                                         <option value="Feni">Feni</option>
                                     </select>
-                                    <label class="label">
+                                    <label className="label">
                                     </label>
                                 </div>
 
                                 {/* To  */}
-                                <div class="form-control w-full max-w-xs">
-                                    <label class="label">
-                                        <span class="label-text">To</span>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text">To</span>
                                     </label>
                                     <select name="select" className="input input-bordered w-full max-w-xs" required  {...register("to", {
                                         required: {
@@ -92,23 +93,23 @@ const BusCollection = () => {
                                         <option value="Chittagong">Chittagong</option>
                                         <option value="Feni">Feni</option>
                                     </select>
-                                    <label class="label">
+                                    <label className="label">
                                     </label>
                                 </div>
 
                                 {/* when  */}
-                                <div class="form-control w-full max-w-xs">
-                                    <label class="label">
-                                        <span class="label-text">When</span>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text">When</span>
                                     </label>
                                     <DatePicker placeholder="Your Last Name" className="input input-bordered w-full max-w-xs" selected={startDate} onChange={(date) => setStartDate(date)} />
 
                                 </div>
 
                                 {/* Time */}
-                                <div class="form-control w-full max-w-xs">
-                                    <label class="label">
-                                        <span class="label-text">Time</span>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text">Time</span>
                                     </label>
                                     <select name="select" className="input input-bordered w-full max-w-xs" required  {...register("time", {
                                         required: {
@@ -126,18 +127,18 @@ const BusCollection = () => {
                                         <option value="5:00 PM">5:00 PM</option>
                                         <option value="6:00 PM">6:00 PM</option>
                                     </select>
-                                    <label class="label">
+                                    <label className="label">
                                     </label>
                                 </div>
                                 {/*seat*/}
-                                <div class="form-control w-full max-w-xs">
-                                    <label class="label">
-                                        <span class="label-text">Seat</span>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text">Seat</span>
                                     </label>
                                     <input
                                         type="text"
                                         placeholder="Enter the Seat Number"
-                                        class="input input-bordered w-full max-w-xs"
+                                        className="input input-bordered w-full max-w-xs"
                                         {...register("seat", {
                                             required: {
                                                 value: true,
@@ -145,14 +146,14 @@ const BusCollection = () => {
                                             }
                                         })}
                                     />
-                                    <label class="label">
-                                        {errors.seat?.type === 'required' && <span class="label-text-alt text-red-500">{errors.seat.message}</span>}
+                                    <label className="label">
+                                        {errors.seat?.type === 'required' && <span className="label-text-alt text-red-500">{errors.seat.message}</span>}
                                     </label>
                                 </div>
 
                                 <div className='form-control w-full max-w-xs '>
-                                    <label class="label">
-                                        <span class="label-text"></span>
+                                    <label className="label">
+                                        <span className="label-text"></span>
                                     </label>
                                     <input className='btn mt-5' type="submit" value="Sign Up" />
                                 </div>

@@ -1,16 +1,16 @@
 import React from 'react';
 import './MyBooking.css'
+import { RiDeleteBin6Fill } from 'react-icons/ri';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Order from '../Order/Order';
 import doneIcon from '../../../assets/icons/done.svg';
 import CancelIcon from '../../../assets/icons/cancel.svg';
 
 
 const MyBooking = () => {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     console.log(user.email);
     const [orders, setOrders] = useState([]);
     useEffect(() => {
@@ -19,7 +19,7 @@ const MyBooking = () => {
             .then(data => setOrders(data?.data))
     }, []);
 
-    console.log(orders);
+    // console.log(orders);
     return (
         // <div className='chart'>
         //     {
@@ -65,7 +65,7 @@ const MyBooking = () => {
                             <td><span>{order.district_from}-{order.district_to}</span></td>
 
                             <td>
-                                <div>
+                                <div disabled={order.status === 'cancel'}>
                                     {order?.status === 'active' ?
                                         <img
                                             src={doneIcon}
@@ -95,7 +95,8 @@ const MyBooking = () => {
                             }</span></td>
                             <td><span disabled={order.status === 'cancel'} className='btn bg-primary'>PAY</span></td>
 
-                            <td><span>Edit</span></td>
+                            <td><span className="btn bg-green-600">Edit</span></td>
+                            <td><span className='text-5xl bg-red-500 text-red-500'><RiDeleteBin6Fill /></span></td>
 
                         </tr>
 

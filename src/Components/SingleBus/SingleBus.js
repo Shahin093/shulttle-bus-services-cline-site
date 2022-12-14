@@ -2,15 +2,16 @@ import React from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BiBus } from 'react-icons/bi';
 
-const SingleBus = ({ b }) => {
+const SingleBus = ({ b, setBookingBus }) => {
+    // console.log(b);
     return (
         <div>
-            <div className=''>
+            <div>
                 <img className='rounded-lg' src={b.img} alt="" />
             </div>
 
             <div data-aos="fade-up" className='w-full lg:w-5/6 bg-white rounded-lg mx-auto mt-[-50px] relative  z-50 shadow-lg p-10'>
-                <h2 className='mx-auto  bg-white text-black text-2xl font-bold'>Volto 403</h2>
+                <h2 className='mx-auto  bg-white text-black text-2xl font-bold'>{b?.bus_name}</h2>
                 <h1 className='mb-14'><span className='text-orange-600 text-2xl'>$250</span>/day</h1>
                 <hr />
 
@@ -45,7 +46,9 @@ const SingleBus = ({ b }) => {
 
                 <div className='flex max-w-full gap-0'>
                     <div className='w-full mt-3 '>
-                        <button class=" px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full"><span>Book Now</span></button>
+                        {/* <!-- The button to open modal --> */}
+                        <label for="my-modal-6" onClick={() => setBookingBus(b)} className="px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full">Booking Now</label>
+
                     </div>
                     <div className=' flex items-center text-black font-bold hover:text-orange-600'>
                         <p>View details</p>

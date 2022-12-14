@@ -1,20 +1,19 @@
 import React from 'react';
 import './BusCollectionService.css';
-import { BiBus } from 'react-icons/bi';
-import { AiOutlineArrowRight } from 'react-icons/ai';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import SingleBus from '../SingleBus/SingleBus';
+import BusModal from '../BusModal/BusModal';
 
 
 const BusCollectionService = () => {
+    const [bookingBus, setBookingBus] = useState(null);
     const [bus, setBus] = useState([]);
     useEffect(() => {
-        fetch('bus.json')
+        fetch('createBus.json')
             .then(res => res.json())
             .then(data => setBus(data))
-    }, [])
-
+    }, []);
     return (
         <div className='mt-20 mx-auto'>
             <h2 className='text-orange-600 font-bold'>Our Bus</h2>
@@ -26,7 +25,7 @@ const BusCollectionService = () => {
                     <p className='w-full'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </div>
                 <div className='w-full items-end'>
-                    <button class="button px-6 py-3 rounded-full rounded-lg"><span>All Vehicle</span></button>
+                    <button className="button px-6 py-3 rounded-full rounded-lg"><span>All Vehicle</span></button>
                 </div>
             </div>
 
@@ -36,7 +35,7 @@ const BusCollectionService = () => {
 
                 {
                     bus.map(b =>
-                        <SingleBus key={b._id} b={b}></SingleBus>
+                        <SingleBus key={b._id} b={b} setBookingBus={setBookingBus}></SingleBus>
                     )
                 }
                 {/* <div>
@@ -81,7 +80,7 @@ const BusCollectionService = () => {
 
                         <div className='flex max-w-full gap-0'>
                             <div className='w-full mt-3 '>
-                                <button class=" px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full"><span>Book Now</span></button>
+                                <button className=" px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full"><span>Book Now</span></button>
                             </div>
                             <div className=' flex items-center text-black font-bold hover:text-orange-600'>
                                 <p>View details</p>
@@ -135,7 +134,7 @@ const BusCollectionService = () => {
 
                         <div className='flex max-w-full gap-0'>
                             <div className='w-full mt-3 '>
-                                <button class=" px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full"><span>Book Now</span></button>
+                                <button className=" px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full"><span>Book Now</span></button>
                             </div>
                             <div className=' flex items-center text-black font-bold hover:text-orange-600'>
                                 <p>View details</p>
@@ -188,7 +187,7 @@ const BusCollectionService = () => {
 
                         <div className='flex max-w-full gap-0'>
                             <div className='w-full mt-3 '>
-                                <button class=" px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full"><span>Book Now</span></button>
+                                <button className=" px-6 py-3 bg-orange-700 hover:bg-black text-white text-1xl font-bold rounded-full"><span>Book Now</span></button>
                             </div>
                             <div className=' flex items-center text-black font-bold hover:text-orange-600'>
                                 <p>View details</p>
@@ -200,6 +199,9 @@ const BusCollectionService = () => {
                 </div> */}
 
             </div>
+            {
+                bookingBus && <BusModal key={bookingBus._id} bookingBus={bookingBus} setBookingBus={setBookingBus}></BusModal>
+            }
         </div>
     );
 };
