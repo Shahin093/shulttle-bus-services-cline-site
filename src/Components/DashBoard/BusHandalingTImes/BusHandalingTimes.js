@@ -6,6 +6,9 @@ import './BusHandalingTimes.css';
 
 import doneIcon from '../../../assets/icons/done.svg';
 import CancelIcon from '../../../assets/icons/cancel.svg';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading';
 const BusHandalingTimes = () => {
 
     const slotFromData = {
@@ -16,6 +19,9 @@ const BusHandalingTimes = () => {
 
     };
 
+    const [user, loading] = useAuthState(auth);
+
+
     // const result = slotFromData?.district_from;
     // const result1 = slotFromData?.district_to;
     // console.log(result, result1);
@@ -24,7 +30,6 @@ const BusHandalingTimes = () => {
     // console.log(slotFromData?.bus_name);
     // slotFromData?.bus_name.map(b => console.log(b))
 
-    // const [user] = useAuthState(auth);
     const [slotDataHandle, setSlotDataHandle] = useState([]);
 
     var seat = 0;
@@ -33,6 +38,9 @@ const BusHandalingTimes = () => {
     )
 
     const [startDate, setStartDate] = useState(new Date());
+
+
+
     // form hooks 
     const { register, formState: { errors }, handleSubmit } = useForm();
     // onsubmit 
@@ -51,6 +59,12 @@ const BusHandalingTimes = () => {
             .then(data => setSlotDataHandle(data?.data))
 
 
+    };
+
+
+    // loading page 
+    if (loading) {
+        return <Loading></Loading>
     }
 
 
@@ -68,7 +82,7 @@ const BusHandalingTimes = () => {
                         <div className="card-body">
                             <form onSubmit={handleSubmit(onSubmit)}>
 
-                                <div className="grid grid-cols-1 lg:grid-cols-6 gap-2">
+                                <div className="grid grid-cols-2 lg:grid-cols-6 gap-2">
                                     {/* Bus_name  */}
                                     <div className="form-control w-full">
                                         <label className="label">
@@ -206,7 +220,7 @@ const BusHandalingTimes = () => {
             </div>
 
             {
-                slotDataHandle ?
+                slotDataHandle.length > 0 ?
                     <table>
                         <thead>
                             <th>BUS</th>
@@ -295,7 +309,8 @@ const BusHandalingTimes = () => {
 
                     </table>
                     :
-                    <p>Data Destibution Please</p>
+
+                    <p className='text-5xl text-red-700'>Data is not Found Please Try again!</p>
             }
 
 
