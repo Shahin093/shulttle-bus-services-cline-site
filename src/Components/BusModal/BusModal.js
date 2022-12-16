@@ -6,7 +6,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import auth from '../../firebase.init';
 
-const BusModal = ({ bookingBus, setBookingBus }) => {
+const BusModal = ({ bookingBus }) => {
 
     // user auth 
     const [user] = useAuthState(auth);
@@ -14,12 +14,8 @@ const BusModal = ({ bookingBus, setBookingBus }) => {
     // date 
     const [startDate, setStartDate] = useState(new Date());
 
-
     // react from 
     const { register, formState: { errors }, handleSubmit } = useForm();
-
-
-
 
     // option From 
     const optionsFrom = [
@@ -49,33 +45,79 @@ const BusModal = ({ bookingBus, setBookingBus }) => {
         setSelectedTo(event.target.value);
 
     };
+    // auto timing systems 
 
+    const date = new Date();
+    const showTime = date.getHours()
+        + ':' + date.getMinutes()
+        + ":" + date.getSeconds();
+    // console.log(showTime.split(':', 1)[0])
     // option slot 
     const optionsSlot = [
-        // { value: '', text: '--Choose an option--' },
+        { value: '00000', text: '--Choose an option--' },
+        { value: '1:00AM', text: '1:00AM' },
+        { value: '5:00AM', text: '5:00AM' },
+        { value: '6:00AM', text: '6:00AM' },
+        { value: '7:00AM', text: '7:00AM' },
         { value: '8:00AM', text: '8:00AM' },
         { value: '9:00AM', text: '9:00AM' },
         { value: '10:00AM', text: '10:00AM' },
         { value: '11:00AM', text: '11:00AM' },
-        { value: '12:00PM', text: '12:00pM' }
+        { value: '12:00PM', text: '12:00pM' },
     ];
+
+    // optionsSlot.map(opsl =>
+    //     {
+    //     if (showTime.split(':', 1)[0] === opsl.value.split(':', 1)) {
+    //         opsl?.value?.remove(opsl.value)
+    //     }
+    // }
+    // console.log(opsl)
+    // )
+
+    // Removing the specified element by value from the array
+    // for (var i = 0; i < optionsSlot.length; i++) {
+    // if (optionsSlot[i].value === showTime.split(':', 1)[0]) {
+    //     var spliced = optionsSlot.splice(i, 1);
+    //     console.log("Removed element: " + spliced);
+    //     console.log("Remaining elements: " + optionsSlot);
+    // }
+    // if ("1" === "1") {
+    //     var spliced = optionsSlot.splice(i, 1);
+    //     console.log("Removed element: " + spliced);
+    //     console.log("Remaining elements: " + optionsSlot);
+    // }
+
+    // }
+
+
     const [selectedSlot, setSelectedSlot] = useState(optionsSlot[0].value);
 
-    // console.log(selectedSlot, selectedFrom, selectedTo);
     const dates = new Date().toISOString().slice(0, 10);
-    const [slotDataHandle, setSlotDataHandle] = useState([]);
-    // console.log(slotDateH);
-    const handleChangeSlot = event => {
 
+    const handleChangeSlot = event => {
         setSelectedSlot(event.target.value);
 
-
     };
-    // console.log(selectedSlot);
+    // console.log(selectedSlot.split(':', 1)[0]);
+    const [slotDataHandle, setSlotDataHandle] = useState([]);
+
     fetch(`http://localhost:5000/api/v1/busCollection/slots?slot=${selectedSlot}&from=${selectedFrom}&to=${selectedTo}&bus_name=${bookingBus?.bus_name}&&dates=${dates}`)
         .then(res => res.json())
-        .then(data => console.log(data?.data))
-    // console.log(slotDataHandle);
+        .then(data => setSlotDataHandle(data?.data))
+
+    var seat = 0;
+    slotDataHandle?.map(sl =>
+        seat = seat + sl.seat
+    )
+
+    const [seatCount, setSeatCount] = useState(0);
+    const onChangeCaptureHandler = (e) => {
+        setSeatCount(e.target.value);
+    };
+
+
+
     // onsubmit 
     const onSubmit = async data => {
         const bus_name = bookingBus?.bus_name;
@@ -112,7 +154,7 @@ const BusModal = ({ bookingBus, setBookingBus }) => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 alert(data.message)
             });
 
@@ -241,6 +283,7 @@ const BusModal = ({ bookingBus, setBookingBus }) => {
                                                 <span className="label-text">Seat</span>
                                             </label>
                                             <input
+                                                onChangeCapture={onChangeCaptureHandler}
                                                 type="text"
                                                 placeholder="Enter the Seat Number"
                                                 className="input input-bordered w-full max-w-xs"
@@ -252,15 +295,29 @@ const BusModal = ({ bookingBus, setBookingBus }) => {
                                                 })}
                                             />
                                             <label className="label">
+                                                {
+                                                    seatCount > 50 - seat && <span className='label-text-alt text-red-500'>Please don't avaiable seat</span>
+                                                }
                                                 {errors.seat?.type === 'required' && <span className="label-text-alt text-red-500">{errors.seat.message}</span>}
                                             </label>
                                         </div>
 
+                                        <input disabled=
+                                            {
+                                                parseInt(showTime.split(":", 1)[0]) >= parseInt(selectedSlot.split(':', 1)[0])
+                                                ||
+                                                seatCount > 50 - seat
+                                            }
+                                            className='btn mt-5 bg-orange-500' type="submit" value="Booking Now" />
                                         <div className='form-control w-full max-w-xs '>
                                             <label className="label">
-                                                <span className="label-text"></span>
+                                                <span className="label-text">
+                                                    {
+                                                        showTime.split(":", 1)[0] >= selectedSlot.split(':', 1)[0] &&
+                                                        <p className='label-text-alt text-red-500'>Time OUt This slot : {selectedSlot.split(':', 1)[0]}</p>
+                                                    }
+                                                </span>
                                             </label>
-                                            <input className='btn mt-5 bg-orange-500' type="submit" value="Booking Now" />
                                         </div>
                                     </div>
 
@@ -273,7 +330,10 @@ const BusModal = ({ bookingBus, setBookingBus }) => {
                     </div >
 
                     <div>
-                        <p>seat Avaible</p>
+                        <p>
+                            Avalable Seat :  <span className='text-blue-700 font-bold '>{50 - seat}</span>
+                        </p>
+
 
                     </div>
                     <div className="modal-action">

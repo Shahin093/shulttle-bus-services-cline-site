@@ -19,7 +19,7 @@ import OriginalNavbar from './Components/OriginalNavber/OriginalNavbar';
 
 import DashBoard from './Components/DashBoard/DashBoard';
 // import Chart from './Components/DashBoard/Chart/Chart';
-// import MyBooking from './Components/DashBoard/MyBooking/MyBooking';
+import MyBooking from './Components/DashBoard/MyBooking/MyBooking';
 import BusHandalingTimes from './Components/DashBoard/BusHandalingTImes/BusHandalingTimes';
 // import FeaturedInfo from './Components/DashBoard/FeaturedInfo/FeaturedInfo';
 // import PresengerList from './Components/DashBoard/PresengerList/PresengerList';
@@ -99,7 +99,7 @@ function App() {
           </RequiredAuth>
         }>
 
-          {/* <Route path='/dashboard/mybooking' element={<MyBooking></MyBooking>}></Route> */}
+          <Route path='/dashboard/mybooking' element={<MyBooking></MyBooking>}></Route>
           <Route path='/dashboard/slothandle' element={<BusHandalingTimes></BusHandalingTimes>}></Route>
 
           {/* <Route path='/dashboard/featuresinfo' element={<FeaturedInfo></FeaturedInfo>}></Route> */}
