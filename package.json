@@ -58,15 +58,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
-  },
-  "plugins": [
-    [
-      "@babel/plugin-transform-react-jsx",
-      {
-        "throwIfNamespace": false,
-        "runtime": "automatic",
-        "importSource": "custom-jsx-library"
-      }
-    ]
-  ]
+  }
 }

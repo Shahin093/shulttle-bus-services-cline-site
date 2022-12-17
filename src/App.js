@@ -84,7 +84,7 @@ function App() {
       // <OriginalNavbar></OriginalNavbar>
       {/* <Navbar></Navbar> */}
       {/* <BusCollection></BusCollection> */}
-      // <Routes>
+      <Routes>
         {/* <Route path="/" element={<HomePage />} /> */}
         {/* <Route path="/aboutSuttle" element={
           <RequiredAuth>
@@ -101,14 +101,14 @@ function App() {
           </RequiredAuth>
         }> */}
 
-          {/* <Route path='/dashboard' element={<MyBooking></MyBooking>}></Route>
+        {/* <Route path='/dashboard' element={<MyBooking></MyBooking>}></Route>
           <Route path='/dashboard/slothandle' element={<BusHandalingTimes></BusHandalingTimes>}></Route>
 
           <Route path='/dashboard/featuresinfo' element={<FeaturedInfo></FeaturedInfo>}></Route>
 
           <Route path='/dashboard/presenger' element={<PresengerList></PresengerList>}></Route> */}
 
-          {/* <Route path='/dashboard//chart' element={<Chart data={userData} title="User Analytics" grid dataKey="Active User"></Chart>}></Route> */}
+        {/* <Route path='/dashboard//chart' element={<Chart data={userData} title="User Analytics" grid dataKey="Active User"></Chart>}></Route> */}
         {/* </Route> */}
 
       </Routes>

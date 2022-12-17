@@ -7,6 +7,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 // http://localhost:5000/api/v1/busCollection?email=sishahin093@gamil.com
+// http://localhost:5000/api/v1/busCollection?email=sishahin093@gamil.com
 
 const BusCollection = () => {
     const [user] = useAuthState(auth);
