@@ -63,7 +63,8 @@ const BusModal = ({ bookingBus }) => {
         { value: '9:00AM', text: '9:00AM' },
         { value: '10:00AM', text: '10:00AM' },
         { value: '11:00AM', text: '11:00AM' },
-        { value: '12:00PM', text: '12:00pM' },
+        { value: '12:00PM', text: '12:00PM' },
+        { value: '20:00PM', text: '5:00PM' },
     ];
 
     // optionsSlot.map(opsl =>
